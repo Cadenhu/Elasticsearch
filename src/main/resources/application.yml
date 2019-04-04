@@ -1,0 +1,7 @@
+server:
+  port: 12345
+es:
+  ip: 127.0.0.1
+  port: 9300
+  pool: 5
+
