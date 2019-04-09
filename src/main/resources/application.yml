@@ -1,7 +1,17 @@
 server:
   port: 12345
-es:
-  ip: 127.0.0.1
-  port: 9300
-  pool: 5
-
+spring:
+  datasource:
+    url: jdbc:log4jdbc:mysql://172.16.9.57:3306/tospur_web?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true
+    username: tcnet
+    password: Tospur2019
+    driver-class-name: net.sf.log4jdbc.DriverSpy
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 10
+    maxActive: 100
+    minIdle: 10
+    maxWait: 30000
+    testOnBorrow: true
+    validationQuery: SELECT 1
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
