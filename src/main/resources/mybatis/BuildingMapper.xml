@@ -14,6 +14,6 @@
         ,tags
         ,left_margin
         ,top_margin
-    FROM building_unit limit 0,5000
+    FROM building_unit limit 5001,234315
 </select>
 </mapper>
